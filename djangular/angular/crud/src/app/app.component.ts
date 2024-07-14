@@ -16,7 +16,7 @@ export class AppComponent {
     this.api.getAllMovies().subscribe (
       data => {
         console.log(data);
-        //this.movies = data;  //data.results;
+        this.movies = data;  //data.results;
       },
       error => {
         console.log(error);
